@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DropBox - Local File Share</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <!-- Ionicons for modern icons -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+<body>
+    <div class="app-container">
+        <header class="app-header">
+            <div class="logo">
+                <ion-icon name="cloud-upload-outline"></ion-icon>
+                <h1>DropShare</h1>
+            </div>
+            <p class="subtitle">Secure local network file sharing</p>
+        </header>
+
+        <main>
+            <section class="upload-section">
+                <div id="drop-zone" class="drop-zone">
+                    <input type="file" id="file-input" multiple hidden>
+                    <div class="drop-content">
+                        <ion-icon name="add-circle-outline" class="upload-icon"></ion-icon>
+                        <p class="desktop-text">Drag & drop files here or <span class="highlight">browse</span></p>
+                        <p class="mobile-text">Tap to upload files</p>
+                    </div>
+                </div>
+                
+                <div id="upload-progress-container" class="progress-container hidden">
+                    <div class="progress-info">
+                        <span id="progress-text">Uploading...</span>
+                        <span id="progress-percentage">0%</span>
+                    </div>
+                    <div class="progress-bar-bg">
+                        <div id="progress-bar" class="progress-bar-fill"></div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="files-section">
+                <div class="section-header">
+                    <h2>Recent Files</h2>
+                    <button id="refresh-btn" class="icon-btn">
+                        <ion-icon name="refresh-outline"></ion-icon>
+                    </button>
+                </div>
+                
+                <div id="files-grid" class="files-grid">
+                    <!-- File cards will be injected here by JS -->
+                </div>
+                
+                <div id="empty-state" class="empty-state hidden">
+                    <ion-icon name="folder-open-outline"></ion-icon>
+                    <p>No files uploaded yet.</p>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
