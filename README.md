@@ -37,6 +37,9 @@ Backend:
 * Socket.IO
 * Multer
 
+How to run:
+* Make sure it runs on port number 3000 on your IP Address
+
 Purpose:
 
 The project is designed as a personal private file transfer system similar to AirDrop or SHAREit but focused on local web-based sharing with a professional modern UI and full control over the server.
