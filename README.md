@@ -1,6 +1,6 @@
 # web-server
 
-# BlackDrop — Private Local File Sharing Web Server
+# DropShare — Private Local File Sharing Web Server
 
 BlackDrop is a modern local file sharing web server designed for fast, secure, and cross-platform file transfer between devices on the same WiFi network. It allows users to share photos, videos, documents, ZIP files, APKs, PDFs, and other file types directly between Android phones, iPhones, and Windows laptops through a clean browser-based interface.
 
@@ -39,6 +39,7 @@ Backend:
 
 How to run:
 * Make sure it runs on port number 3000 on your IP Address
+* You can also just click the exe file if running windows os, it will manage everything automatically and show web link 
 
 Purpose:
 
