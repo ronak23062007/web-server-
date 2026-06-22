@@ -2,7 +2,7 @@
 
 # DropShare — Private Local File Sharing Web Server
 
-BlackDrop is a modern local file sharing web server designed for fast, secure, and cross-platform file transfer between devices on the same WiFi network. It allows users to share photos, videos, documents, ZIP files, APKs, PDFs, and other file types directly between Android phones, iPhones, and Windows laptops through a clean browser-based interface.
+DropShare is a modern local file sharing web server designed for fast, secure, and cross-platform file transfer between devices on the same WiFi network. It allows users to share photos, videos, documents, ZIP files, APKs, PDFs, and other file types directly between Android phones, iPhones, and Windows laptops through a clean browser-based interface.
 
 The system works as a private local web server running on a personal computer using Node.js and Express.js. Devices connected to the same network can access the server through a browser without requiring cloud storage, external hosting, or account creation.
 
